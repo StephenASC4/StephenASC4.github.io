@@ -1,4 +1,4 @@
-function quoteloop{
+function quoteloop(){
     $.ajax({
         url: 'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous&count=1', // The URL to the API. You can get this in the API page of the API you intend to consume
         type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
