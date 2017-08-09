@@ -4,7 +4,6 @@ function quoteloop(){
         type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
         data: {}, // Additional parameters here
         dataType: 'json',
-        success: function(data) { console.dir((data.source)); },
         error: function(err) { alert(err); },
         beforeSend: function(xhr) {
         xhr.setRequestHeader("X-Mashape-Authorization", "WR0hcUcz0WmshDgQg9WBLOgM5Q1gp1Scbayjsn6ErtQJYqfhvL"); // Enter here your Mashape key
@@ -22,6 +21,12 @@ $(document).ready(function (){
 function setup(){
     $('.name').slideUp(0);
     $('.name').slideDown('slow');
+    $('#shot').slideUp(0);
+    $('#shot').slideDown('slow');
+    $('#github','#linkedin','#resume','#envelope').slideUp(0);
+    $('#github','#linkedin','#resume','#envelope').slideDown('slow');
+    $('#play','#pause').slideUp(0);
+    $('#play','#pause').slideDown('slow');
 }
 function time(){
     setInterval(function() {
