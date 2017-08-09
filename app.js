@@ -17,9 +17,12 @@ function quoteloop(){
 console.log("Hello! I'm Stephen!");
 $(document).ready(function (){
     time();
+    setup();
 });
-$('.name').slideUp(0);
-$('.name').slideDown('slow');
+function setup(){
+    $('.name').slideUp(0);
+    $('.name').slideDown('slow');
+}
 function time(){
     setInterval(function() {
         quoteloop()
