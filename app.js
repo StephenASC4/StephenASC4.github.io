@@ -21,12 +21,7 @@ $(document).ready(function (){
 function setup(){
     $('.name').slideUp(0);
     $('.name').slideDown('slow');
-    $('#shot').slideUp(0);
-    $('#shot').slideDown('slow');
-    $('#github','#linkedin','#resume','#envelope').slideUp(0);
-    $('#github','#linkedin','#resume','#envelope').slideDown('slow');
-    $('#play','#pause').slideUp(0);
-    $('#play','#pause').slideDown('slow');
+    $('#shot').fadeIn('slow');
 }
 function time(){
     setInterval(function() {
