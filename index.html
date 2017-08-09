@@ -11,8 +11,23 @@
             <h1>console.log("Hello! I'm Stephen!")</h1>
         </div>
         <div class = "bust">
-            <img id = 'shot'src="mememe.jpg" onload="$(this).fadeIn()">
+            <img id = 'shot'src="mememe.jpg">
         </div>
+        <script>
+            $('body').ready(function() { 
+
+            $('img').hide();
+            $('img').each(function(i) {
+                if (this.complete) {
+                    $(this).fadeIn();
+                 } else {
+                    $(this).load(function() {
+                        $(this).fadeIn(2000);
+                    });
+                }   
+            });
+        });
+        </script>
         <div id="background">
             <div class="main">
                 <h3 id="subtitle">Don't make fame your goal. Make your goal doing what you do to the best of your ability, and that's something no one can take away from you.<br /><br />Daniel Avidan</h2>
