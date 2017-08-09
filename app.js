@@ -18,6 +18,7 @@ console.log("Hello! I'm Stephen!");
 $(document).ready(function (){
     time();
 });
+$('body').slideDown('slow', function (){})
 function time(){
     setInterval(function() {
         quoteloop()
