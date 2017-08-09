@@ -69,3 +69,8 @@ content: "";
     margin-top:58%;
     margin-left:7%;
 }
+#subtitle {
+    transition: all;
+    /*transition-delay: 5s;
+    transition-duration: 1s;    */
+}
