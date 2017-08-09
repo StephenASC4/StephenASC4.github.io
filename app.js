@@ -21,7 +21,6 @@ $(document).ready(function (){
 function setup(){
     $('.name').slideUp(0);
     $('.name').slideDown('slow');
-    $('.bust').fadeIn('slow');
 }
 function time(){
     setInterval(function() {
