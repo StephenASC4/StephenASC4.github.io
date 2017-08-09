@@ -22,5 +22,5 @@ function time(){
     setInterval(function() {
         quoteloop()
         $('#subtitle').remove();
-    },1000)
+    },2000)
 }
