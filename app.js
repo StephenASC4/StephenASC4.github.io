@@ -18,5 +18,5 @@ console.log("Hello! I'm Stephen!");
 function time(){
     setInterval(function() {
         quoteloop()
-    }1000)
+    },1000)
 }
