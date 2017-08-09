@@ -9,6 +9,7 @@ function quoteloop(){
         xhr.setRequestHeader("X-Mashape-Authorization", "WR0hcUcz0WmshDgQg9WBLOgM5Q1gp1Scbayjsn6ErtQJYqfhvL"); // Enter here your Mashape key
         },
         success: function (data){
+            $('#subtitle').remove();
             $('.main').prepend("<h3 id='subtitle'>"+data.quote+"<br /><br />"+data.author+"</h3>")
         }
     })
@@ -25,6 +26,5 @@ function setup(){
 function time(){
     setInterval(function() {
         quoteloop()
-        $('#subtitle').remove();
     },2000)
 }
