@@ -15,6 +15,9 @@ function quoteloop(){
     })
 }
 console.log("Hello! I'm Stephen!");
+$(document).ready(function (){
+    time();
+});
 function time(){
     setInterval(function() {
         quoteloop()
